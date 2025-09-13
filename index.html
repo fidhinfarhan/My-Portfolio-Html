@@ -5,142 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header  -->
-    <header>
-        <img src="./Assetes/IMG_20241119_222850_852.jpg" width="200" height="200" alt="" style="border-radius:50%;">
-        <h1>Farhan's protfolio</h1>
-    </header>
-
-
     <!-- Nav Bar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#project">projects</a></li>
-            <li><a href="#contact">Contact Me</a> </li>
+    <nav class="nav-bar">
+
+        <ul class="nav-ul">
+            <li class="about-li"><a href="#about">About</a></li>
+            <li class="about-li"><a href="#project">projects</a></li>
+            <li class="about-li"><a href="#contact">Contact</a> </li>
         </ul>
     </nav>
-    <!-- Main -->
-    <main>
 
-        <!-- About Section -->
+    <!-- Header  -->
+    <div class="container">
+        <header>
+            <div class="photo-bg">
+                <img class="profile-photo" src="./Assetes/WhatsApp Image 2025-09-12 at 23.21.54_056d2cb7.jpg">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p> I'm Fidhin Farhan, a passionate front-end developer based in Kannur. I'm currently expanding my skills
-                by studying web development through <a href="https://webapp.entri.app/skills/courses"
-                    target="_blank">Entry Elevate</a>, where I am gaining hands-on experience in building modern,
-                responsive websites. Throughout my learning journey, I've had the opportunity to work on several <a
-                    href="#project">projects</a> that have helped me hone my abilities in creating user-friendly
-                interfaces and writing clean, efficient code. </p>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Languages: HTML, CSS, JavaScript</li>
-                <li>MERN Stack: MongoDB, Express.js, React.js, Node.js</li>
-                <li>Design: UI/UX Design</li>
-            </ul>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem-solving</li>
-                <li>Team work</li>
-                <li>Time Management</li>
-                <li>Communication</li>
-            </ul>
-        </section>
+            </div>
+        </header>
 
-        <!-- Project Section -->
+        <!-- Main -->
+        <main>
+            <!-- About Section -->
+            <section class="content" id="about"></section>
+            <div class="main-content">
+                <h1>Hi, I'm <span>Fidhin Farhan</span></h1>
+                <h2 class="main-h2">Front-end Developer</h2>
+                <p class="main-p"> a passionate front-end developer based in Kannur. I'm currently
+                    expanding my skills by studying web development through <a
+                        href="https://webapp.entri.app/skills/courses" target="_blank">Entry Elevate</a>, I am gaining
+                    hands-on experience in building modern,
+                    responsive websites. Throughout my learning journey, </P>
+                <div class="btn-group">
+                    <a href="#contact">Contact Me</a>
+                    <a href=#project>See Projects</a>
+                </div>
+            </div>
+    </div>
+    </section>
 
-        <section id="project">
-            <h2>Projects</h2>
+    <!-- Project Section -->
+    <h2 class="sub-h2">Projects</h2>
+    <section class="prj-content" id="project">
+        <div class="Movie-prj">
+
+            <img src="./Assetes/movie-ranking image.png" alt="Screenshot of the Movie Ranking Project Website"
+                class="proj-img" width="300" height="300">
+        </div>
+
+        <div class="rank-div">
             <h3> Movie Ranking Project</h3>
             <a href="./Assetes/movie-ranking.html" target="_blank">
-                <h4>View project</h4>
+                <h4 class="view-btn">View project</h4>
             </a>
-            <img src="./Assetes/movie-ranking image.png" alt="Screenshot of the Movie Ranking Project Website"
-                width="300" height="300">
-
             <h5>How is My Project</h5>
-            <input type="radio" id="movie-good" name="rate" checked>
-            <label for="movie-good">Good</label>
-            <input type="radio" name="rate" id="movie-bad">
-            <label for="movie-bad">bad</label>
+            <div class="radio-proj">
+                <input type="radio" id="movie-good" name="rate" checked>
+                <label for="movie-good">Good</label>
+                <input type="radio" name="rate" id="movie-bad">
+                <label for="movie-bad">bad</label>
+            </div>
+        </div>
 
 
 
+        <div class="birthday-prj">
+            <img src="./Assetes/birthday-invite image.png" alt="Screenshot of the Birthday Invaite Project Website"
+                class="proj-img" width="200" height="300">
+
+        </div>
+        <div class="rank-div">
             <h3>Birthday Invite Project</h3>
             <a href="./Assetes/birthday-invite.html" target="_blank">
-                <h4>View Project</h4>
+                <h4 class="view-btn">View Project</h4>
             </a>
-            <img src="./Assetes/birthday-invite image.png" alt="Screenshot of the Birthday Invaite Project Website"
-                width="200" height="300">
 
             <h5>How is My Project</h5>
-            <input type="radio" name="rated" id="birthday-good" checked>
-            <label for="birthday-good">Good</label>
-            <input type="radio" name="rated" id="birthday-bad">
-            <label for="birthday-bad">bad</label>
-        </section>
-        <p>
-            if you are impressed with my work feel free to connect with me
-        </p>
+
+            <div class="radio-proj">
+                <input type="radio" name="rated" id="birthday-good" checked>
+                <label class="radio" for="birthday-good">Good</label>
+                <input type="radio" name="rated" id="birthday-bad">
+                <label for="birthday-bad">bad</label>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="form-section">
 
 
-        <!-- Contact Section -->
+        <!-- Form Validation -->
+        <div class="form-card">
+            <h2 class="form-title">CONTACT ME</h2>
 
+            <div>
+                <form class="form-grid">
+                    <div>
+                        <label class="form-label" for="name">First Name</label>
+                        <input type="text" id="name" placeholder="e.g james bond" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Last Name </label>
+                        <input type="text" name="last-name" id="last-name" class="form-input" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="e.g jamesbond@gmail.com"
+                            class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Phone Number</label>
+                        <input type="tel" name="phone-number" id="phone-number" class="form-input"
+                            placeholder="Phone Number">
+                    </div>
+                    <div class="form-group  full-width ">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea name="" id="message" rows="5" class="form-textarea" required></textarea>
+                    </div>
+                    <button class="sub-btn" type="submit">Submit</button> <button class="sub-btn"
+                        type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
 
-        <section id="contact">
+    </section>
 
-            <h2>Contact Me</h2>
+    </main>
 
-            <!-- Form Validation -->
-
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="e.g james bond" required>
-                <br><br>
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="e.g jamesbond@gmail.com" required>
-                <br><br>
-
-                <label for="number">Phone number</label>
-                <input type="tel" name="number" id="number" placeholder="e.g 1234567890" pattern="[0-9]{10}" required>
-                <br><br>
-
-                <label for="subject">Subject</label>
-                <select name="subject" id="subject">
-                    <option value="subject">Website Development </option>
-                    <option value="subject">Website Design </option>
-                    <option value="subject">Wev Application </option>
-                    <option value="subject">Website Maintaenance </option>
-                </select>
-                <br><br>
-
-                <label for="message">Message</label>
-                <textarea name="" id="message" cols="30" rows="5" required></textarea>
-                <br><br>
-
-                <button type="submit">Submit</button> <button type="reset">Reset</button>
-                <br><br>
-
-            </form>
-
-        </section>
-
-        </main>
-
-        <!-- Footer -->
-
-        <footer>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <p>&copy; 2025 Farhan,s protfolio. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1AGXhLkwkg/" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2.04C6.545 2.04 2.04 6.545 2.04 12c0 5.455 4.505 9.96 9.96 9.96h.001c5.455 0 9.96-4.505 9.96-9.96C22.04 6.545 17.535 2.04 12 2.04zM15 9h-2c-0.552 0-1 0.448-1 1v2h3l-0.3 3h-2.7v7h-3v-7h-2v-3h2v-2c0-2.209 1.791-4 4-4h3v3z"
+                        fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M22 6.556c-0.812 0.36-1.688 0.605-2.613 0.716 0.938-0.563 1.656-1.458 1.996-2.527 -0.875 0.522-1.844 0.902-2.88 1.107-0.828-0.884-2.007-1.436-3.313-1.436 -2.52 0-4.568 2.047-4.568 4.568 0 0.358 0.04 0.704 0.118 1.037 -3.799-0.19-7.168-2.008-9.423-4.756 -0.394 0.676-0.62 1.464-0.62 2.302 0 1.583 0.806 2.986 2.03 3.805 -0.748-0.024-1.451-0.23-2.064-0.57 0 0.019 0 0.038 0 0.056 0 2.21 1.574 4.053 3.66 4.475 -0.383 0.103-0.786 0.158-1.201 0.158 -0.294 0-0.578-0.028-0.854-0.081 0.582 1.815 2.27 3.134 4.27 3.169 -1.56 1.222-3.524 1.954-5.656 1.954 -0.367 0-0.729-0.021-1.085-0.063 2.022 1.295 4.416 2.054 7.004 2.054 8.404 0 13.013-6.969 13.013-13.014 0-0.198-0.004-0.395-0.013-0.591 0.89-0.643 1.66-1.444 2.274-2.355z" />
+                </svg>
+            </a>
             <a href="https://www.linkedin.com/in/fidhin-farhan-6941ba2aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank">Linkedin</a>
-            <a href="https://github.com/fidhinfarhan" target="_blank">Git hub</a>
-            <p>Copyright &copy; 2025</p>
-        </footer>
-    
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M22 2.285c0-0.199-0.06-0.398-0.199-0.537s-0.338-0.199-0.537-0.199h-20c-0.199 0-0.398 0.06-0.537 0.199s-0.199 0.338-0.199 0.537v19.429c0 0.199 0.06 0.398 0.199 0.537s0.338 0.199 0.537 0.199h20c0.199 0 0.398-0.06 0.537-0.199s0.199-0.338 0.199-0.537v-19.429zM8 19.571h-3.429v-9.714h3.429v9.714zM6.285 8.786c-1.157 0-2.1-0.943-2.1-2.1s0.943-2.1 2.1-2.1c1.157 0 2.1 0.943 2.1 2.1s-0.943 2.1-2.1 2.1zM20 19.571h-3.429v-5.286c0-0.671-0.543-1.214-1.214-1.214s-1.214 0.543-1.214 1.214v5.286h-3.429v-9.714h3.429v1.543c0.471-0.757 1.257-1.543 2.457-1.543 1.486 0 2.914 1.057 2.914 3.429v6.286z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
 
 
 </body>
